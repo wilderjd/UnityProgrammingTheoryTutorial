@@ -1,0 +1,31 @@
+This project requires the inclusion of the four pillars of OOP.
+I need to use abstraction, inheritance, polymorphism, and encapsulation.
+
+This game is a simple survival game. You need to collect resources to continue to survive.
+
+Inheritance:
+
+The base class for my inheritance is the resources.
+
+There resource subclasses are fuel, food, clothes, tools.
+
+In the game the fuel comes is the wood from a tree, clothes are made from leaves from plants, food is the fruit from bushes or trees, and tools are stones on the ground. 
+
+Polymorphism:
+Resources could all potentially be used for other things.
+For example, fuel burns the best, so it will be better for using in the fire, but you can burn food and clothes, but the benefit will be less. Tools might be used to start the fire, while food and clothes cannot start a fire. 
+
+
+Encapsulation:
+Each resources will have a resource value that represents how much it is good for. For example, if the food has a value of 4, when you eat it, your hunger decreases by 4 and it is consumed. If you try to burn the food, it might burn for a little while consuming 2 units, but then you can eat it, using the remaining 2 units. 
+This data needs to be protected from other classes.
+
+Abstraction:
+
+There will be methods to decrease the value. 
+One will be used to decrease the value if its burning, one will decrease the value if its being consumed as food, one will decrease the value as you use it as a tool, and the last will be to decrease the value as you wear it as clothes as it starts to get worn out.
+
+
+
+
+
