@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//this class uses inheritance
 public class Food : Resource
 {
     public Food() : base()

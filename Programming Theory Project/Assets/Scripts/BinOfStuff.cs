@@ -7,6 +7,8 @@ public class BinOfStuff : MonoBehaviour
 {
     public static BinOfStuff bin;
 
+    // ENCAPSULATION
+    //below are examples of encapsulation
     public float Warmth { get; private set;}
     public float Full { get; private set;}
     public float ClothStamina { get; private set;}
@@ -128,6 +130,10 @@ public class BinOfStuff : MonoBehaviour
                     " wood, " + _food.GetValue() + " food, and " + _clothes.GetValue()+
                     " fabric.";
                 }
+
+                // ABSTRACTION
+                //the following details are abstracted out
+                //the details are in the specific methods
                 if (hit.transform.name=="Picnic")
                 {
                     havePicnic();
