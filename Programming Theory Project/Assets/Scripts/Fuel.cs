@@ -4,21 +4,31 @@ using UnityEngine;
 
 public class Fuel : Resource
 {
+    public Fuel() : base()
+    {
+        
+    }
+
+    public Fuel(int v) : base(v)
+    {
+        
+    }
+
     public override float Eat()
     {
         value--;
-        return 0.5f;
+        return 1f;
     }
 
     public override float Burn()
     {
         value--;
-        return 2f;
+        return 3f;
     }
 
     public override float Wear(){
         value--;
-        return 0.25f;
+        return 1f;
     }
 
 }

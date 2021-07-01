@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class Clothes : Resource
 {
+
+    public Clothes() : base()
+    {
+        
+    }
+
+    public Clothes(int v) : base(v)
+    {
+        
+    }
+
+
     public override float Wear(){
         value--;
         return 4f;

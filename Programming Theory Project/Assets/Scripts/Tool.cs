@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Tool : Resource
 {
+    public Tool() : base()
+    {
+        
+    }
     public override float Eat()
     {
         return 0f;
@@ -14,4 +18,11 @@ public class Tool : Resource
         value--;
         return 4f;
     }
+
+    public override string ToString()
+    {
+        return "Tool: " + this.GetValue();
+    }
+
+
 }

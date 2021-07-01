@@ -2,10 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Resource : MonoBehaviour
+public class Resource
 {
     protected int value;
     
+    public Resource()
+    {
+        value = 4;
+    }
+
+    public Resource(int v)
+    {
+        value = v;
+    }
+
     public virtual float Eat()
     {
         value--;
@@ -36,6 +46,16 @@ public class Resource : MonoBehaviour
 
     public int GetValue(){
         return value;
+    }
+
+    public void decreaseValue(int amount)
+    {
+        value -= amount;
+    }
+
+    public void decreaseValue()
+    {
+        value -= 1;
     }
 
 }

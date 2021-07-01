@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class Food : Resource
 {
+    public Food() : base()
+    {
+        
+    }
+    public Food(int v) : base(v)
+    {
+        
+    }
     public override float Eat()
     {
         value--;
